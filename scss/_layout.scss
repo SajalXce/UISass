@@ -1,0 +1,437 @@
+.navbar {
+  @include flexLayout;
+  padding: 30px 10%;
+  background: transparent;
+
+  &-logo {
+    margin-right: auto;
+  }
+
+  &-links {
+    li {
+      display: inline-block;
+      padding: 0px 20px;
+
+      a {
+        text-decoration: none;
+        color: #2a2a2a;
+        font: {
+          family: $font-nunito;
+          weight: 520;
+          size: 16px;
+        }
+      }
+    }
+  }
+
+  .Sign {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    background: rgb(19, 175, 240);
+    border-radius: 25px;
+    font-weight: 500;
+    font-family: $font-nunito;
+
+    &:hover {
+      color: aquamarine;
+      cursor: pointer;
+    }
+  }
+
+  .line hr {
+    border-top: 1px solid grey;
+    z-index: 2;
+  }
+}
+ 
+.latest {
+    // Common styles for all screen sizes
+    display: flex;
+  
+    &-back-img {
+      position: relative;
+      z-index: 1;
+      width: 50%;
+  
+      img {
+        margin-top: -120px;
+        display: block;
+        height: 800px;
+      }
+    }
+  
+    &-btn {
+      margin-top: 10px;
+      display: flex;
+    }
+  
+   
+  }
+  
+  
+  .content {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-family: $font-nunito;
+  
+    &-h1 {
+     
+    
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: black;
+    }
+  
+    &-p {
+        margin-top: 10px;
+      color: black;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+  }
+  
+  .btn {
+     
+    width: 100px;
+    display: flex;
+    padding: 10px 50px;
+    background-color: #4b8ef1;
+  
+    border-radius: 15px;
+    margin: 10px 10px;
+    font-family: $font-nunito;
+  
+    &-contact,  &-Free {
+        
+      width: 150px;
+     display: inline-block;
+      padding: 10px 20px;
+      background-color: #4b8ef1;
+      border: 2px solid;
+      border-radius: 15px;
+      margin: 0 10px;
+  
+      &-link {
+
+        color: #c72323;
+        &-Free {
+          color: #fff;
+        }
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    &:hover {
+        background-color: #4b8ef1;
+    }
+  }
+  
+  .mobile img {
+       margin-top: 120px;
+       height: 500px;
+  }
+  
+  .Amazing {
+
+    font-weight: 500;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 20px;
+  
+    &-Blog {
+
+      line-height: 1cm;
+      margin-left: 30%;
+      margin-top: 30px;
+      text-align: center;
+      max-width: 45%;
+      color: #8a8888;
+    }
+  }
+  
+  .pricing-container {
+
+    margin-top: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-family: $font-nunito;
+  
+  
+  
+    &-card {
+      background-color: rgb(238, 238, 247);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      transition: .6s;
+
+  
+      h2 {
+        color: #333;
+        font-size: 24px;
+      }
+  
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      
+    }
+    &-card:hover {
+        
+        background-color: $color-primary;
+
+        .price {
+            color: black;
+        }
+       
+     }
+  
+    .price {
+      color: $color-primary;
+      font-size: 32px;
+      font-weight: bold;
+
+    }
+   
+
+  
+    .features {
+      margin: 20px 0;
+  
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  
+    .purchase-btn {
+      background: $color-primary;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 5px;
+  
+      &:hover {
+        background: #0056b3;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+  
+  .rating {
+    margin-top: 7%;
+    display: flex;
+    margin-left: 10%;
+    padding: 30px;
+    justify-content: space-between;
+    line-height: 50px;
+  
+    .left {
+      display: flex;
+      flex-direction: row;
+      gap: 20%;
+  
+      li {
+        list-style: none;
+  
+        &-Name {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+  
+  .stars {
+    .first, .second, .third, .fourth, .fifth {
+      padding: 18px;
+      display: flex;
+      color: $color-primary;
+    }
+  }
+  
+  .content_rating {
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-image: url('https://templatemo.com/templates/templatemo_570_chain_app_dev/assets/images/client-bg.png');
+  
+    p {
+      padding-top: 70px;
+      padding-left: 40px;
+      line-height: 1cm;
+    }
+  
+    .right & {
+      color: white;
+    }
+  }
+  
+  .face {
+    margin-top: 20px;
+    justify-content: space-between;
+  
+    img {
+      height: 150px;
+      width: 150px;
+      border: 2px solid white;
+      border-radius: 100%;
+    }
+  
+    h2, h4 {
+      color: $color-primary;
+    }
+  }
+  
+  .service-container {
+
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    background: #f4f7f6;
+    text-align: center;
+    height: 300px;
+  }
+  
+  .service-card {
+
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    border: 0px 10px 0px 0px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+
+      background-color: #4b8ef1;
+      transform: translateY(-5px);
+    }
+  
+    &-icon {
+      margin-left: auto;
+    }
+  
+    p {
+      margin-top: 5px;
+      color: #666;
+      line-height: 1cm;
+    }
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+  
+      &:hover {
+        color: #0056b3;
+      }
+    }
+
+.footer {
+    
+        margin-left: 10%;
+        padding: 30px;
+        color: #333;
+        font-family: $font-nunito;
+      
+        &-bg {
+          background-color: #edf0f3;
+        }
+      
+        .head {
+          h1 {
+            margin: 0;
+          }
+        }
+      
+        .subscribe {
+
+          button {
+            background-color: $color-primary;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid white;
+            border-radius: 20px;
+            margin-top: 2%;
+          }
+        }
+      
+        .links {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          gap: 10%;
+        }
+      
+        .contact {
+
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+      
+          h4 {
+            margin-bottom: 5px;
+          }
+      
+          p {
+            padding: 10px;
+          }
+        }
+      
+        .aboutus li {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+        }
+      
+        .UseFulLinks li {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+        }
+      
+        .company {
+          display: flex;
+          flex-direction: column;
+      
+          img {
+
+            margin-top: 10px;
+            height: 50px;
+            width: 80px;
+          }
+      
+          p {
+            margin-top: 10px;
+            padding: 10px;
+          }
+        }
+      
+        .copyright {
+          margin-top: 20px;
+          text-align: center;
+          margin-right: 10%;
+        }
+      }
+      
