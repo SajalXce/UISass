@@ -215,6 +215,7 @@
   
       li {
         margin-bottom: 10px;
+        margin-left: 50px;
       }
     }
   
@@ -260,6 +261,8 @@
     .first, .second, .third, .fourth, .fifth {
       padding: 18px;
       display: flex;
+      justify-content: space-between;
+      gap: 10%;
       color: $color-primary;
     }
   }
@@ -327,7 +330,10 @@
     }
   
     &-icon {
-      margin-left: auto;
+       
+        margin-top: 50px;
+        margin-left: -50%;
+        margin-bottom: 20px;
     }
   
     p {
